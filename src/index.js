@@ -7,9 +7,9 @@ import * as serviceWorker from './serviceWorker';
 const rootEl = document.getElementById('root')
 const render = () => ReactDOM.render(<App />, rootEl);
 
-
-if(module.hot)
+if(module.hot){
   module.hot.accept('./app/layout/App', () => setTimeout(render))
+}
 
 render()
   
