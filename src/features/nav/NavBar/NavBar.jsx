@@ -11,8 +11,8 @@ class NavBar extends Component {
 
   handleSignIn = () => this.setState({ authenticated: true });
   handleSignOut = () => {
-    this.setState({ authenticated: false })
-    this.props.history.push('/')
+    this.setState({ authenticated: false });
+    this.props.history.push("/");
   };
 
   render() {
@@ -24,8 +24,8 @@ class NavBar extends Component {
             <img src="assets/logo.png" alt="logo" />
             Re-vents
           </Menu.Item>
-          <Menu.Item as={NavLink} to="/events" name="Events" />
-          <Menu.Item as={NavLink} to="/people" name="People" />
+          <Menu.Item as={NavLink} to="/events" name="Events" exact />
+          <Menu.Item as={NavLink} to="/people" name="People" exact />
           <Menu.Item as={NavLink} to="/test" name="Test" />
           <Menu.Item>
             <Button
@@ -47,4 +47,4 @@ class NavBar extends Component {
     );
   }
 }
-export default withRouter(NavBar)
+export default withRouter(NavBar);
