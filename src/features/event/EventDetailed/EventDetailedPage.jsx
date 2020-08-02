@@ -6,13 +6,16 @@ import { EventDetailedChat } from "./EventDetailedChat";
 import { EventDetailedSidebar } from "./EventDetailedSidebar";
 import { connect } from "react-redux";
 
-const mapStateToProps = (state, ownProps) => ({
-  event: state.events.find(
-    (event) => event.id === ownProps.match.params.id
-  ),
-});
+const mapStateToProps = (state, ownProps) => {
+  return {
+    event: state.firestore.ordered.events.find(
+      (event) => event.id === ownProps.match.params.id
+    )
+  }
+};
 
 const EventDetailedPage = ({ event }) => {
+  if(!event) return <></>
   return (
     <Grid>
       <Grid.Column width={10}>
@@ -21,7 +24,7 @@ const EventDetailedPage = ({ event }) => {
         <EventDetailedChat />
       </Grid.Column>
       <Grid.Column width={6}>
-        <EventDetailedSidebar attendees={event.attendees} />
+        <EventDetailedSidebar attendees={Object.values(event.attendees)} />
       </Grid.Column>
     </Grid>
   );
