@@ -8,7 +8,7 @@
     "firebase": "^6.0.2",
     "google-map-react": "^1.1.4",
     "install": "^0.13.0",
-    "moment": "^2.22.0",
+    "moment": "^2.29.2",
     "node-pre-gyp": "^0.14.0",
     "react": "^16.8.6",
     "react-cropper": "^1.2.0",
