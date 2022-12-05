@@ -1780,6 +1780,13 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-toastr@^3.0.4":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@types/react-toastr/-/react-toastr-3.0.5.tgz#21bbf789fa61627ed984a3e94421a9cf9d1d38c1"
+  integrity sha512-bjNOuvCb98cGJjVZcwOmf/RLXaVCaGh13AmZfdo/6Wo8MkiVdWtepNlMXCyWHFiIIa0PaF3swSMEuzwaLEDKkg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "16.9.41"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.41.tgz#925137ee4d2ff406a0ecf29e8e9237390844002e"
@@ -3715,9 +3722,9 @@ decamelize@^2.0.0:
     xregexp "4.0.0"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1, deep-equal@^1.1.1:
   version "1.1.1"
